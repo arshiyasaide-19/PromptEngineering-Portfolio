@@ -1,10 +1,10 @@
-##Prompt Engineering Portfolio
+## Prompt Engineering Portfolio
 Name: Arshiya Saide 
 Date: 5 June 2026
 LLM Used: Claude.ai Sonnet 4.6
 
-##Part 1: Prompt Design & Iteration
-###1.1 Scenario A: Technical Explanation
+## Part 1: Prompt Design & Iteration
+### 1.1 Scenario A: Technical Explanation
 
 Prompt V1
 
@@ -151,7 +151,7 @@ Try to fake Block 1? The entire chain snaps. You'd have to re-write *everyone's*
 
 > **Blockchain = a shared notebook, owned by everyone, faked by no one.**
 
-###1.1 Scenario 2 : Professional Email
+### 1.1 Scenario 2 : Professional Email
 
 Prompt V1
 
@@ -236,7 +236,7 @@ Arshiya
 
 
 
-###1.1 Scenario C : Creative Content 
+### 1.1 Scenario C : Creative Content 
 
 Prompt V1 
 
@@ -394,7 +394,7 @@ Want me to build a full brand voice guide or social media copy set around any of
 
 In Scenario A, assigning the role of a "great tutor who explains with visuals and real world scenarios" completely changed the quality of the output — instead of a textbook definition of blockchain, I got a simple notebook analogy that actually made sense to me as a BBA student. Adding context about my academic background (double-entry bookkeeping, supply chain, finance) meant Claude stopped explaining from scratch and started connecting to things I already understood, which made the explanation land much faster. In Scenario B, framing Claude as my "personal assistant" first and then a "senior HR professional" made a huge difference in tone — the first role gave me warmth and personality, the second gave me polish and structure, and combining both across iterations got me an email that felt genuinely like something I would send. What I realised from both scenarios is that role and context don't just change the wording — they change what the model thinks the goal actually is, which changes everything from the examples it picks to how formal or casual it
 
-##Part 2: Temperature & Parameter Control
+## Part 2: Temperature & Parameter Control
 Task Chosen
 Explaining what photosynthesis is.
 
