@@ -1,7 +1,9 @@
 ## Prompt Engineering Portfolio
-Name: Arshiya Rajjak Saide
-Date: 06/06/2026
-LLM Used: Claude 4.6 Sonnet
+
+- **Name:** Arshiya Saide
+- **Date:** 6 June 2026
+- **LLM Used:** Claude 4.6 Sonnet
+
 
 ## Part 1: Prompt Design & Iteration
 ### 1.1 Scenario A: Technical Explanation
