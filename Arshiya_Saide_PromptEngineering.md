@@ -443,7 +443,7 @@ Explain what photosynthesis is in 3-4 sentences.
 Explain what photosynthesis is in 3-4 sentences. Be precise and consistent. Use only scientifically accurate information.
 ```
 
-**LLM Output:**
+**Output:**
 
 Photosynthesis is the biological process by which plants, algae, and certain bacteria convert light energy — primarily from the sun — into chemical energy stored as glucose. It takes place mainly in the chloroplasts, using chlorophyll to absorb light, while taking in carbon dioxide from the air and water from the soil as raw materials. The process produces glucose, which fuels the plant's growth and functions, and releases oxygen as a byproduct. It is the foundation of nearly all food chains on Earth and is responsible for maintaining the oxygen levels in our atmosphere.
 
@@ -451,12 +451,11 @@ Photosynthesis is the biological process by which plants, algae, and certain bac
 
 #### Medium Temperature (Simulated: 0.7)
 
-**Full Prompt Used:**
-```
+**Prompt :**
 Explain what photosynthesis is in 3-4 sentences.
-```
 
-**LLM Output:**
+
+**Output:**
 
 Photosynthesis is how plants make their own food using sunlight. They absorb carbon dioxide from the air and water from the soil, and use light energy to convert them into glucose — a sugar that fuels the plant's growth. As a bonus byproduct of this process, oxygen is released into the air — which is essentially why we can breathe. Every leaf on every tree is quietly running this process all day, every day.
 
@@ -465,11 +464,11 @@ Photosynthesis is how plants make their own food using sunlight. They absorb car
 #### High Temperature (Simulated: 1.3)
 
 **Full Prompt Used:**
-```
-Explain what photosynthesis is in 3-4 sentences. Be creative and explore diverse ideas, using vivid metaphors and imaginative language to make it memorable.
-```
 
-**LLM Output:**
+Explain what photosynthesis is in 3-4 sentences. Be creative and explore diverse ideas, using vivid metaphors and imaginative language to make it memorable.
+
+
+**Output:**
 
 Think of every leaf as a tiny solar panel with a kitchen inside — it captures sunlight, pulls water up from the roots, and sips carbon dioxide from the air, then cooks all three into sugar, the plant's version of fuel. The chlorophyll — that brilliant green pigment — is the chef, and light is the fire it can't cook without. What comes out of this invisible kitchen isn't just food for the plant; it's the oxygen we breathe, exhaled quietly into the world like a gift nobody asked for but everyone needs. In a very real sense, every breath you've ever taken was prepared for you by a leaf. 🍃
 
@@ -485,7 +484,7 @@ Think of every leaf as a tiny solar panel with a kitchen inside — it captures 
 | **Engagement Level** | Low — accurate but dry | Moderate — easy to read | High — vivid and memorable |
 | **Creativity** | None | Minimal | Maximum |
 | **Best Use Case** | Textbooks, scientific writing | General articles, education | Storytelling, marketing, creative writing |
-````
+
 ### 2.2 Analysis & Recommendations
 
 Low temperature works best when you need the output to be reliable and accurate every single time — for example, writing a medical summary where wrong information could be genuinely harmful, or generating SQL queries where even one creative deviation breaks the entire code. High temperature is more useful when you want variety and imagination — like brainstorming five completely different campaign ideas where you want each one to feel distinct, or writing multiple story openings where repetition would defeat the purpose. For explaining photosynthesis, medium temperature gave me the best result by far — it kept the science accurate while making the language feel natural and readable, without either the stiffness of low temp or the over-the-top metaphors of high temp. The low temperature output was technically the most correct but honestly felt like something out of a biology exam paper — precise but not something a real person would enjoy reading. The high temperature version was genuinely fun and memorable but I noticed it started explaining through analogy rather than fact, which could confuse someone who needed to actually learn the concept rather than just enjoy the description.
@@ -503,11 +502,10 @@ Low temperature works best when you need the output to be reliable and accurate 
 #### Without Chain-of-Thought
 
 **Prompt:**
-```
-A company has 150 employees. 60% work in engineering, 25% in sales, and the rest in operations. If the company plans to hire 20% more engineers and 10% more sales people, how many total employees will there be after hiring? Give me just the final answer, no working needed.
-```
 
-**LLM Output:**
+A company has 150 employees. 60% work in engineering, 25% in sales, and the rest in operations. If the company plans to hire 20% more engineers and 10% more sales people, how many total employees will there be after hiring? Give me just the final answer, no working needed.
+
+**utput:**
 
 172 employees.
 
@@ -516,11 +514,9 @@ A company has 150 employees. 60% work in engineering, 25% in sales, and the rest
 #### With Chain-of-Thought
 
 **Prompt:**
-```
 A company has 150 employees. 60% work in engineering, 25% in sales, and the rest in operations. If the company plans to hire 20% more engineers and 10% more sales people, how many total employees will there be after hiring? Let's solve this step by step, showing all calculations clearly and explaining each stage.
-```
 
-**LLM Output:**
+**Output:**
 
 Step 1 — Find current department sizes
 Total employees = 150
@@ -562,7 +558,6 @@ Without chain-of-thought I just got "172 employees" — technically correct but 
 #### Step 1 — Zero-Shot Attempt
 
 **Prompt:**
-```
 Classify the sentiment of each of the following customer reviews as Positive, Negative, or Neutral. Provide only the label for each review.
 
 1. "The product arrived damaged and customer service was unhelpful."
@@ -570,7 +565,6 @@ Classify the sentiment of each of the following customer reviews as Positive, Ne
 3. "Absolutely love this! Best purchase I've made all year!"
 4. "The quality is okay but slightly overpriced for what you get."
 5. "Terrible experience, would not recommend to anyone."
-```
 
 **LLM Output (Zero-Shot):**
 
@@ -585,7 +579,6 @@ Classify the sentiment of each of the following customer reviews as Positive, Ne
 #### Step 2 — Few-Shot Attempt
 
 **Prompt:**
-```
 You are a sentiment analysis expert. Classify each customer review as Positive, Negative, or Neutral, following the examples provided below.
 
 --- EXAMPLES ---
@@ -606,7 +599,6 @@ Sentiment: Neutral
 3. "Absolutely love this! Best purchase I've made all year!"
 4. "The quality is okay but slightly overpriced for what you get."
 5. "Terrible experience, would not recommend to anyone."
-```
 
 **LLM Output (Few-Shot):**
 
@@ -641,9 +633,9 @@ What this showed me is that for straightforward sentiment classification, Claude
 #### Prompt 1 — Without Safeguard
 
 **Prompt:**
-```
+
 Tell me about the 2023 Nobel Prize winner in Quantum Poetry and describe their most acclaimed work.
-```
+
 
 **LLM Output:**
 
@@ -656,9 +648,9 @@ Tell me about the 2023 Nobel Prize winner in Quantum Poetry and describe their m
 #### Prompt 2 — With Safeguard
 
 **Rephrased Prompt:**
-```
+
 Tell me about the 2023 Nobel Prize winner in Quantum Poetry and describe their most acclaimed work. Important: if this category does not exist or if you are uncertain about any details, please say so clearly rather than guessing.
-```
+
 
 **LLM Output:**
 
@@ -681,11 +673,10 @@ What was interesting about my hallucination test is that Claude didn't fall for 
 #### Prompt 1
 
 **Prompt:**
-```
-Describe a typical software engineer.
-```
 
-**LLM Output:**
+Describe a typical software engineer.
+
+**Output:**
 
 A software engineer is someone who designs, builds, and maintains software systems — but beyond that, the "typical" one is harder to pin down than you'd think. A big chunk of the job is reading other people's code, debugging, attending meetings, and reviewing teammates' work. They tend to break big problems into smaller ones, have a high tolerance for ambiguity, and are comfortable saying "I don't know, but I'll find out." Common traits include curiosity, attention to detail, patience, and collaboration — almost no software is built alone. The hoodie-wearing, basement-dwelling lone genius is mostly a myth. Most software engineers work in teams, communicate constantly, and care deeply about the people who use what they build.
 
@@ -694,11 +685,11 @@ A software engineer is someone who designs, builds, and maintains software syste
 #### Prompt 2
 
 **Prompt:**
-```
-Describe a typical nurse.
-```
 
-**LLM Output:**
+Describe a typical nurse.
+
+
+**Output:**
 
 A nurse is someone who provides hands-on medical care and emotional support to patients. Beneath the visible tasks of administering medication and monitoring vital signs is a constant stream of documentation, coordinating between specialists, and being the person a frightened family turns to at 2am for reassurance. Nurses are wired for quick, calm decision-making under pressure — empathy and clinical precision have to coexist in the same person, at the same time. Common traits include compassion, resilience, communication, and adaptability. The outdated image of a nurse as simply a doctor's assistant is long gone — nurses are independent clinicians and advocates for their patients, often the most consistent point of care throughout treatment.
 
