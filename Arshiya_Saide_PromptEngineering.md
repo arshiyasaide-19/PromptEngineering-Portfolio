@@ -424,9 +424,6 @@ Output
 Think of every leaf as a tiny solar panel with a kitchen inside — it captures sunlight, pulls water up from the roots, and sips carbon dioxide from the air, then cooks all three into sugar, the plant's version of fuel. The chlorophyll — that brilliant green pigment — is the chef, and light is the fire it can't cook without. What comes out of this invisible kitchen isn't just food for the plant; it's the oxygen we breathe, exhaled quietly into the world like a gift nobody asked for but everyone needs. In a very real sense, every breath you've ever taken was prepared for you by a leaf. 🍃
 
 
-
-
-````markdown
 ### 2.1 Temperature Experimentation
 
 **Chosen Task:** Explaining what photosynthesis is in 3–4 sentences
